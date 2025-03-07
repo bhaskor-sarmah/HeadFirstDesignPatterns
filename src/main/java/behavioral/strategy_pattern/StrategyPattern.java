@@ -1,13 +1,13 @@
-package behavioral.strategy;
+package behavioral.strategy_pattern;
 
-import behavioral.strategy.ducksimulator.behaviors.fly.FlyNoWay;
-import behavioral.strategy.ducksimulator.behaviors.fly.FlyWithWings;
-import behavioral.strategy.ducksimulator.behaviors.quack.MuteQuack;
-import behavioral.strategy.ducksimulator.behaviors.quack.Quack;
-import behavioral.strategy.ducksimulator.ducks.Duck;
-import behavioral.strategy.ducksimulator.ducks.MallardDuck;
-import behavioral.strategy.ducksimulator.ducks.ModelDuck;
-import behavioral.strategy.ducksimulator.ducks.RubberDuck;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.FlyNoWay;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.FlyWithWings;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.MuteQuack;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.Quack;
+import behavioral.strategy_pattern.ducksimulator.ducks.Duck;
+import behavioral.strategy_pattern.ducksimulator.ducks.MallardDuck;
+import behavioral.strategy_pattern.ducksimulator.ducks.ModelDuck;
+import behavioral.strategy_pattern.ducksimulator.ducks.RubberDuck;
 
 public class StrategyPattern {
 

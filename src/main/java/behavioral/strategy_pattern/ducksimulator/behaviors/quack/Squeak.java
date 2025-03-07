@@ -1,4 +1,4 @@
-package behavioral.strategy.ducksimulator.behaviors.quack;
+package behavioral.strategy_pattern.ducksimulator.behaviors.quack;
 
 public class Squeak implements Quackable {
 

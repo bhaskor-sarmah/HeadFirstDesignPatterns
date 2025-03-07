@@ -1,4 +1,4 @@
-package behavioral.strategy.ducksimulator.ducks;
+package behavioral.strategy_pattern.ducksimulator.ducks;
 
 public class MallardDuck extends Duck {
 
