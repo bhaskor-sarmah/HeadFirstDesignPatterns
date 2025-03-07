@@ -5,13 +5,13 @@ import behavioral.strategy_pattern.ducksimulator.behaviors.quack.MuteQuack;
 
 public class ModelDuck extends Duck {
 
-    public ModelDuck() {
-        flyBehaviour = new FlyWithPropultion();
-        quakeBehaviour = new MuteQuack();
-    }
+  public ModelDuck() {
+    flyBehaviour = new FlyWithPropultion();
+    quakeBehaviour = new MuteQuack();
+  }
 
-    @Override
-    public void display() {
-        System.out.println("Model Duck");
-    }
+  @Override
+  public void display() {
+    System.out.println("Model Duck");
+  }
 }
