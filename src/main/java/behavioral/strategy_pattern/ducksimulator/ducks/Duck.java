@@ -1,7 +1,7 @@
-package behavioral.strategy.ducksimulator.ducks;
+package behavioral.strategy_pattern.ducksimulator.ducks;
 
-import behavioral.strategy.ducksimulator.behaviors.fly.Flyable;
-import behavioral.strategy.ducksimulator.behaviors.quack.Quackable;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.Flyable;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.Quackable;
 
 public abstract class Duck {
 

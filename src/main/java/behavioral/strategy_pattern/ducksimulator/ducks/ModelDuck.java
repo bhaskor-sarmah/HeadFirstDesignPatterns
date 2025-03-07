@@ -1,7 +1,7 @@
-package behavioral.strategy.ducksimulator.ducks;
+package behavioral.strategy_pattern.ducksimulator.ducks;
 
-import behavioral.strategy.ducksimulator.behaviors.fly.FlyWithPropultion;
-import behavioral.strategy.ducksimulator.behaviors.quack.MuteQuack;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.FlyWithPropultion;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.MuteQuack;
 
 public class ModelDuck extends Duck {
 

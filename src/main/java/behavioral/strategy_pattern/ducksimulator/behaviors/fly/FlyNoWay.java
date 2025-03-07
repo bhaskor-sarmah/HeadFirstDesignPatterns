@@ -1,4 +1,4 @@
-package behavioral.strategy.ducksimulator.behaviors.fly;
+package behavioral.strategy_pattern.ducksimulator.behaviors.fly;
 
 public class FlyNoWay implements Flyable{
 

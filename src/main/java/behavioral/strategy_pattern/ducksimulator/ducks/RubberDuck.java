@@ -1,9 +1,9 @@
-package behavioral.strategy.ducksimulator.ducks;
+package behavioral.strategy_pattern.ducksimulator.ducks;
 
-import behavioral.strategy.ducksimulator.behaviors.fly.FlyNoWay;
-import behavioral.strategy.ducksimulator.behaviors.fly.Flyable;
-import behavioral.strategy.ducksimulator.behaviors.quack.Quackable;
-import behavioral.strategy.ducksimulator.behaviors.quack.Squeak;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.FlyNoWay;
+import behavioral.strategy_pattern.ducksimulator.behaviors.fly.Flyable;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.Quackable;
+import behavioral.strategy_pattern.ducksimulator.behaviors.quack.Squeak;
 
 public class RubberDuck extends Duck {
 
