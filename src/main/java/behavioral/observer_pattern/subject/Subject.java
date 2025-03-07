@@ -7,13 +7,13 @@ import java.util.List;
 
 public abstract class Subject {
 
-    List<Observer> observers = new ArrayList<>();
+  List<Observer> observers = new ArrayList<>();
 
-    public abstract void addObserver(final Observer observer);
+  public abstract void addObserver(final Observer observer);
 
-    public abstract void removeObserver(final Observer observer);
+  public abstract void removeObserver(final Observer observer);
 
-    public abstract void updateMeasurements(final long temperature, final long humidity);
+  public abstract void updateMeasurements(final long temperature, final long humidity);
 
-    protected abstract void notifyObserver();
+  protected abstract void notifyObserver();
 }

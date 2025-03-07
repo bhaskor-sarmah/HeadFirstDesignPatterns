@@ -1,9 +1,9 @@
 package behavioral.strategy_pattern.ducksimulator.behaviors.quack;
 
-public class Quack  implements Quackable {
+public class Quack implements Quackable {
 
-    @Override
-    public void quack() {
-        System.out.println("Quack Quack");
-    }
+  @Override
+  public void quack() {
+    System.out.println("Quack Quack");
+  }
 }

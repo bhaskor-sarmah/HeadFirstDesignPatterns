@@ -8,22 +8,22 @@ import behavioral.observer_pattern.subject.WeatherStation;
 
 public class ObserverPattern {
 
-    public static void main(String[] args) {
-        final Subject weatherStation = new WeatherStation();
+  public static void main(String[] args) {
+    final Subject weatherStation = new WeatherStation();
 
-        final Observer temperatureObserver = new TemperatureDisplay();
-        final Observer humidityObserver = new HumidityDisplay();
+    final Observer temperatureObserver = new TemperatureDisplay();
+    final Observer humidityObserver = new HumidityDisplay();
 
-        weatherStation.addObserver(temperatureObserver);
-        weatherStation.addObserver(humidityObserver);
+    weatherStation.addObserver(temperatureObserver);
+    weatherStation.addObserver(humidityObserver);
 
-        weatherStation.updateMeasurements(22L, 55L);
+    weatherStation.updateMeasurements(22L, 55L);
 
-        weatherStation.updateMeasurements(25L, 49L);
+    weatherStation.updateMeasurements(25L, 49L);
 
-        weatherStation.removeObserver(temperatureObserver);
+    weatherStation.removeObserver(temperatureObserver);
 
-        weatherStation.updateMeasurements(28L, 44L);
-    }
+    weatherStation.updateMeasurements(28L, 44L);
+  }
 
 }
