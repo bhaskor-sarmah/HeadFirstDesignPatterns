@@ -11,12 +11,31 @@ Please note that the implementation might not exactly match the examples in the 
 
 The following design patterns are included in this repository:  
 
-### Creational Patterns  
+### Behavioral Patterns
+- Observer
+- Strategy
+
+### Creational Patterns
+- Abstract Factory
 - Factory Method  
 
 ### Structural Patterns  
 - Decorator
 
-### Behavioral Patterns  
-- Strategy  
-- Observer
+## 🚀 Running the Examples
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/head-first-design-patterns.git
+   ```
+2. Navigate to the directory of the pattern you want to run.
+3. Run the `main` method inside the `[PatternName].java` file.
+
+## ⚙️ Environment Requirements
+
+1. Java 8 or later must be installed.
+2. Any Java IDE (e.g., Eclipse, IntelliJ IDEA) is recommended.
+
+## 📚 References
+
+- [Head First Design Patterns Book](https://www.oreilly.com/library/view/head-first-design/9781492077992/)
