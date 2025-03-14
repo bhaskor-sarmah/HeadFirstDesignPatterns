@@ -8,7 +8,7 @@ public abstract class PizzaDecorator implements Pizza {
 
   protected final Pizza basePizza;
 
-  public PizzaDecorator(final Pizza basePizza) {
+  protected PizzaDecorator(final Pizza basePizza) {
     this.basePizza = basePizza;
   }
 }

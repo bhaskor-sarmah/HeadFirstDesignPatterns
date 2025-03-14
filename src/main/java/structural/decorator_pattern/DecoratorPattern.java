@@ -1,5 +1,8 @@
 package structural.decorator_pattern;
 
+import behavioral.strategy_pattern.StrategyPattern;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import structural.decorator_pattern.pizza.MargheritaPizza;
 import structural.decorator_pattern.pizza.PepperoniPizza;
 import structural.decorator_pattern.pizza.Pizza;
@@ -9,6 +12,8 @@ import structural.decorator_pattern.pizza_decorator.ExtraMushrooms;
 import structural.decorator_pattern.pizza_decorator.ExtraOlives;
 
 public class DecoratorPattern {
+
+  private static final Logger logger = LoggerFactory.getLogger(DecoratorPattern.class);
 
   public static void main(String[] args) {
 
@@ -38,6 +43,6 @@ public class DecoratorPattern {
   }
 
   private static void printPizzaDetails(Pizza pizza) {
-    System.out.println(pizza.getDescription() + " : $" + pizza.getPrice());
+      logger.info("{} : ${}", pizza.getDescription(), pizza.getPrice());
   }
 }

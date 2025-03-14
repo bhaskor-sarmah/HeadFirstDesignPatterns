@@ -1,17 +1,22 @@
 package creational.factory_method_pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public abstract class Pizza {
 
-  public abstract void prepare();
+    private static final Logger logger = LoggerFactory.getLogger(Pizza.class);
 
-  public void bake(){
-    System.out.println("Baking pizza");
-  }
+    public abstract void prepare();
 
-  public void cut(){
-    System.out.println("Cutting pizza");
-  }
+    public void bake() {
+        logger.info("Baking pizza");
+    }
 
-  public abstract void box();
+    public void cut() {
+        logger.info("Cutting pizza");
+    }
+
+    public abstract void box();
 
 }

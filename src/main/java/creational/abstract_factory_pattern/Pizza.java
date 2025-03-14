@@ -1,25 +1,44 @@
 package creational.abstract_factory_pattern;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public abstract class Pizza {
+    private static final Logger logger = LoggerFactory.getLogger(Pizza.class);
 
-  protected abstract void prepare(final PizzaIngredientFactory ingredientFactory);
+    public abstract void prepare(final PizzaIngredientFactory ingredientFactory);
 
-  public void bake(){
-    System.out.println("Baking pizza");
-  }
+    private Dough dough;
+    private Cheese cheese;
+    private Sauce sauce;
 
-  public void cut(){
-    System.out.println("Cutting pizza");
-  }
+    public void bake() {
+        logger.info("Baking pizza");
+    }
 
-  protected void addIngredients(final PizzaIngredientFactory ingredientFactory){
-    ingredientFactory.createDough();
-    ingredientFactory.createCheese();
-    ingredientFactory.createSauce();
-  }
+    public void cut() {
+        logger.info("Cutting pizza");
+    }
 
-  public void box(){
-    System.out.println("Packing pizza in Official Pizza box");
-  }
+    protected void addIngredients(final PizzaIngredientFactory ingredientFactory) {
+        dough = ingredientFactory.createDough();
+        cheese = ingredientFactory.createCheese();
+        sauce = ingredientFactory.createSauce();
+    }
 
+    public void box() {
+        logger.info("Packing pizza in Official Pizza box");
+    }
+
+    public Dough getDough() {
+        return dough;
+    }
+
+    public Cheese getCheese() {
+        return cheese;
+    }
+
+    public Sauce getSauce() {
+        return sauce;
+    }
 }

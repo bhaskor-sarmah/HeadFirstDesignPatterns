@@ -2,27 +2,32 @@ package creational.factory_method_pattern;
 
 import creational.factory_method_pattern.chicago_store.ChicagoStylePizzaStore;
 import creational.factory_method_pattern.newyork_store.NewYorkStylePizzaStore;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import structural.decorator_pattern.DecoratorPattern;
 
 public class FactoryMethodPattern {
 
-  public static void main(String[] args) {
+    private static final Logger logger = LoggerFactory.getLogger(FactoryMethodPattern.class);
 
-    final PizzaStore newYorkPizzaStore = new NewYorkStylePizzaStore();
+    public static void main(String[] args) {
 
-    newYorkPizzaStore.processPizza(PizzaTypes.CHEESE);
-    System.out.println("===========================================================");
-    newYorkPizzaStore.processPizza(PizzaTypes.PEPERONI);
-    System.out.println("===========================================================");
-    newYorkPizzaStore.processPizza(PizzaTypes.VEGGIE);
-    System.out.println("===========================================================");
+        final PizzaStore newYorkPizzaStore = new NewYorkStylePizzaStore();
 
-    final PizzaStore chicagoPizzaStore = new ChicagoStylePizzaStore();
+        newYorkPizzaStore.processPizza(PizzaTypes.CHEESE);
+        logger.info("=======================================================================");
+        newYorkPizzaStore.processPizza(PizzaTypes.PEPERONI);
+        logger.info("=======================================================================");
+        newYorkPizzaStore.processPizza(PizzaTypes.VEGGIE);
+        logger.info("=======================================================================");
 
-    chicagoPizzaStore.processPizza(PizzaTypes.CHEESE);
-    System.out.println("===========================================================");
-    chicagoPizzaStore.processPizza(PizzaTypes.PEPERONI);
-    System.out.println("===========================================================");
-    chicagoPizzaStore.processPizza(PizzaTypes.VEGGIE);
+        final PizzaStore chicagoPizzaStore = new ChicagoStylePizzaStore();
 
-  }
+        chicagoPizzaStore.processPizza(PizzaTypes.CHEESE);
+        logger.info("=======================================================================");
+        chicagoPizzaStore.processPizza(PizzaTypes.PEPERONI);
+        logger.info("=======================================================================");
+        chicagoPizzaStore.processPizza(PizzaTypes.VEGGIE);
+
+    }
 }
