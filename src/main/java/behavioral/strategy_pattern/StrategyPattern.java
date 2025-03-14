@@ -8,8 +8,12 @@ import behavioral.strategy_pattern.ducksimulator.ducks.Duck;
 import behavioral.strategy_pattern.ducksimulator.ducks.MallardDuck;
 import behavioral.strategy_pattern.ducksimulator.ducks.ModelDuck;
 import behavioral.strategy_pattern.ducksimulator.ducks.RubberDuck;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class StrategyPattern {
+
+  private static final Logger logger = LoggerFactory.getLogger(StrategyPattern.class);
 
   public static void main(String[] args) {
     final Duck mallardDuck = new MallardDuck();
@@ -29,7 +33,7 @@ public class StrategyPattern {
 
     mallardDuck.performFly();
 
-    System.out.println("******************************************");
+    logger.info("******************************************");
 
     final Duck rubberDuck = new RubberDuck();
     rubberDuck.display();
@@ -43,7 +47,7 @@ public class StrategyPattern {
     rubberDuck.setFlyBehaviour(new FlyWithWings());
     rubberDuck.setQuakeBehaviour(new MuteQuack());
 
-    System.out.println("******************************************");
+    logger.info("******************************************");
 
     final Duck modelDuck = new ModelDuck();
     modelDuck.display();

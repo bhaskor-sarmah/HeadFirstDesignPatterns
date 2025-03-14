@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class MargheritaPizza implements Pizza {
 
-  final BigDecimal cost;
+  private final BigDecimal cost;
 
   public MargheritaPizza(final String cost) {
     this.cost = new BigDecimal(cost);

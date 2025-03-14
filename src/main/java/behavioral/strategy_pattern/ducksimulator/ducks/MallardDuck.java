@@ -1,9 +1,16 @@
 package behavioral.strategy_pattern.ducksimulator.ducks;
 
-public class MallardDuck extends Duck {
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-  public void display() {
-    System.out.println("MallardDuck");
+public class MallardDuck extends Duck {
+  private static final Logger logger = LoggerFactory.getLogger(MallardDuck.class);
+  public static final String MALLARD_DUCK = "Mallard Duck";
+
+  @Override
+  public String display() {
+    logger.info(MALLARD_DUCK);
+    return MALLARD_DUCK;
   }
 
 }

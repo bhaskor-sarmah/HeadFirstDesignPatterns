@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public class VeggiePizza implements Pizza {
 
-  final BigDecimal cost;
+  private final BigDecimal cost;
 
   public VeggiePizza(final String cost) {
     this.cost = new BigDecimal(cost);

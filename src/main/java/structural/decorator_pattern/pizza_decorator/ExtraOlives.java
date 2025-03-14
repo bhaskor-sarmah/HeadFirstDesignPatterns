@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 
 public class ExtraOlives extends PizzaDecorator {
 
-  final BigDecimal cost;
+  private final BigDecimal cost;
 
   public ExtraOlives(final Pizza basePizza, final String cost) {
     super(basePizza);
@@ -20,6 +20,6 @@ public class ExtraOlives extends PizzaDecorator {
 
   @Override
   public BigDecimal getPrice() {
-    return basePizza.getPrice().add(this.cost);
+    return basePizza.getPrice().add(cost);
   }
 }

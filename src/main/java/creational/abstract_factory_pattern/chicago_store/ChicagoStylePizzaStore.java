@@ -10,24 +10,21 @@ import creational.abstract_factory_pattern.chicago_store.pizza_types.ChicagoStyl
 
 public class ChicagoStylePizzaStore extends PizzaStore {
 
-  private static final PizzaIngredientFactory ingredientFactory = new ChicagoPizzaIngredientFactory();
-
-  public ChicagoStylePizzaStore() {
-    super(ingredientFactory);
-  }
-
-  @Override
-  protected Pizza createPizza(PizzaTypes pizzaType) {
-    Pizza pizza = null;
-
-    if(PizzaTypes.CHEESE == pizzaType){
-      pizza = new ChicagoStyleCheesePizza();
-    } else if(PizzaTypes.PEPERONI == pizzaType) {
-      pizza = new ChicagoStylePeperoniPizza();
-    } else {
-      pizza = new ChicagoStyleVeggiePizza();
+    public ChicagoStylePizzaStore(final ChicagoPizzaIngredientFactory chicagoPizzaIngredientFactory) {
+        super(chicagoPizzaIngredientFactory);
     }
 
-    return pizza;
-  }
+    @Override
+    protected Pizza createPizza(PizzaTypes pizzaType) {
+        switch (pizzaType) {
+            case CHEESE:
+                return new ChicagoStyleCheesePizza();
+            case PEPERONI:
+                return new ChicagoStylePeperoniPizza();
+            case VEGGIE:
+                return new ChicagoStyleVeggiePizza();
+            default:
+                throw new IllegalArgumentException("Invalid pizza type: " + pizzaType);
+        }
+    }
 }

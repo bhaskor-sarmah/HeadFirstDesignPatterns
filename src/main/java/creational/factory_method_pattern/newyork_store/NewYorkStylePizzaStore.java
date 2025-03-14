@@ -11,16 +11,15 @@ public class NewYorkStylePizzaStore extends PizzaStore {
 
   @Override
   protected Pizza createPizza(PizzaTypes pizzaType) {
-    Pizza pizza = null;
-
-    if(PizzaTypes.CHEESE == pizzaType){
-      pizza = new NewYorkStyleCheesePizza();
-    } else if(PizzaTypes.PEPERONI == pizzaType) {
-      pizza = new NewYorkStylePeperoniPizza();
-    } else {
-      pizza = new NewYorkStyleVeggiePizza();
+    switch (pizzaType) {
+      case CHEESE:
+        return new NewYorkStyleCheesePizza();
+      case PEPERONI:
+        return new NewYorkStylePeperoniPizza();
+      case VEGGIE:
+        return new NewYorkStyleVeggiePizza();
+      default:
+        throw new IllegalArgumentException("Invalid pizza type: " + pizzaType);
     }
-
-    return pizza;
   }
 }
