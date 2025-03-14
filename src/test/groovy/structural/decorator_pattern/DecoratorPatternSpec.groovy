@@ -1,9 +1,8 @@
-package structural
+package structural.decorator_pattern
 
 import spock.lang.Shared
 import spock.lang.Specification
 import spock.lang.Unroll
-import structural.decorator_pattern.MenuPrice
 import structural.decorator_pattern.pizza.MargheritaPizza
 import structural.decorator_pattern.pizza.PepperoniPizza
 import structural.decorator_pattern.pizza.Pizza
