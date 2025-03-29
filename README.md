@@ -16,6 +16,7 @@ The following design patterns are included in this repository:
 
 ### Behavioral Patterns
 
+- Command
 - Observer
 - Strategy
 
@@ -23,6 +24,7 @@ The following design patterns are included in this repository:
 
 - Abstract Factory
 - Factory Method
+- Singleton
 
 ### Structural Patterns
 
