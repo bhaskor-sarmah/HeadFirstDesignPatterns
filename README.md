@@ -30,6 +30,7 @@ The following design patterns are included in this repository:
 
 - Adapter
 - Decorator
+- Facade
 
 ## 🚀 Running the Examples
 
