@@ -28,6 +28,7 @@ The following design patterns are included in this repository:
 
 ### Structural Patterns
 
+- Adapter
 - Decorator
 
 ## 🚀 Running the Examples
